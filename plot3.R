@@ -42,11 +42,8 @@ par(mar = c(4,4.5,2,2))
 plot(x = p3$new_datetime, y= p3$Sub_metering_1, type = "l", xlab = "", ylab= "Energy sub metering")
 lines (x = p3$new_datetime, p3$Sub_metering_2, type = "l", col="red")
 lines (x = p3$new_datetime, p3$Sub_metering_3, type = "l", col="blue")
-#legend("topright", c("Sub_metering_1", "Sub_metering_2","Sub_metering_3"), cex=0.75, lwd=0.65,
-  #     x.intersp = 0.5, y.intersp = 0.55, xjust = 1, yjust = 1, 
-  #     lty=1,col=c("black","red","blue"))
 legend("topright", c("Sub_metering_1", "Sub_metering_2","Sub_metering_3"), 
-       lty = c(1, 1), lwd = c(1, 1, 1), cex=0.7, 
+       lty = c(1, 1), lwd = c(1, 1, 1), cex=0.7, x.intersp = 0.5, y.intersp = 0.65,
        col=c("black","red","blue"))
 dev.copy(png, file = "plot3.png", width = 480, height = 480)
 dev.off()
