@@ -43,7 +43,7 @@ plot(x = p3$new_datetime, y= p3$Sub_metering_1, type = "l", xlab = "", ylab= "En
 lines (x = p3$new_datetime, p3$Sub_metering_2, type = "l", col="red")
 lines (x = p3$new_datetime, p3$Sub_metering_3, type = "l", col="blue")
 legend("topright", c("Sub_metering_1", "Sub_metering_2","Sub_metering_3"), 
-       lty = c(1, 1), lwd = c(1, 1, 1), cex=0.7, x.intersp = 0.5, y.intersp = 0.65,
+       lty = c(1, 1), lwd = c(1, 1, 1), cex=0.7, x.intersp = 0.6, y.intersp = 0.65,
        col=c("black","red","blue"))
 dev.copy(png, file = "plot3.png", width = 480, height = 480)
 dev.off()
