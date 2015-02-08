@@ -52,7 +52,7 @@ plot(x = p4$new_datetime, y= p4$Sub_metering_1, type = "l", xlab = "", ylab= "En
 lines (x = p4$new_datetime, p4$Sub_metering_2, type = "l", col="red")
 lines (x = p4$new_datetime, p4$Sub_metering_3, type = "l", col="blue")
 legend("topright", c("Sub_metering_1", "Sub_metering_2","Sub_metering_3"), cex=0.55, 
-      bty = 'n', 
+      bty = 'n', x.intersp = 0.6, y.intersp = 0.7,
        lty=1,col=c("black","red","blue"))
 
 #bottom right
